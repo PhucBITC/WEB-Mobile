@@ -1,0 +1,503 @@
+* {
+    margin: 0 ;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    height: 1500px;
+    background-color:#F2F2F2;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#header{
+    width: 100%;
+}
+.header-introduce{
+    /* position:fixed;
+    top:0;
+    z-index:8; */
+    width: 100%;
+    height:40px;
+    background-color: #EE0033;
+}
+.header-introduce__section{
+    margin: 0 30px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.header-introduce__section a:hover  {
+    color:   #4ca7af;
+    
+}
+.header-introduce__section a {
+    text-decoration: none;
+    color:aliceblue;
+    padding: 7px;
+    height: 30px;
+}
+.header-introduce__section li{
+    padding: 0 12px;
+    list-style-type: none;
+    
+   
+    
+}
+/* Header search */
+.header-search {
+display: flex;
+margin:1px 50px 12px 22px;
+}
+.header-search__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: SFProDisplayRegular;
+    
+}
+img.mobile {
+    width: 50px;
+    margin-right: 5px;
+}
+h2 a:hover {
+    color:#b6cfc6;
+}
+h2 a {
+    text-decoration: none;
+    color:rgb(212, 130, 92);
+}
+.header-search__section i{
+    font-size: 50px;
+    color:rgb(227, 57, 57);
+}
+.header-search__input-click{
+    /* background-color: aqua; */
+    height: 38px;
+    width: 770px;
+    padding-left: 10px;
+    margin: 12px;
+    border-radius: 15px;
+    border: 1px solid #773838 ;
+    outline: none;
+}
+.header-search__input{
+    position: relative;
+    display: block;
+    margin: auto;
+}
+.header-search__icon{
+    position: absolute;
+    color:aliceblue;
+    top: 15px;
+    right: 14px;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #EE0033;
+}
+.header-search__icon:hover {
+    background-color: #9feef4;
+}
+.header-search__icon i {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+.header-search__icon-search{
+    display: flex;
+}
+
+.header-search__list {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding:0 12px;
+    margin-top: 14px;
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    color:aliceblue;
+    background-color: #EE0033;
+
+}
+.header-search__list:hover {
+    background-color:#9feef4;
+}
+.header-search__cart{
+    margin: 20px 15px;
+    cursor: pointer;
+}
+.header-search__cart i {
+    font-size: 30px;
+    color:#EE0033;
+}
+.header-search__cart i:hover {
+    color:#9feef4 ;
+}
+/* Header-listed */
+.header-listed{
+position: relative;
+z-index: 10;
+margin: 0 auto;
+width: 84%;
+height: 50px;
+background-color: #EE0033;
+border-radius: 5px;
+}
+/* DDIỆN THOẠI , LAPTOP , TABLET , TAI NGHE ,PHỤ KIỆN , SỬA CHỮA , SIM THẺ , THANH TOÁN  */
+.header-listed__items {
+    position: absolute;
+    display:none;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top:38px;
+    left: 1px;
+    height: 300px;
+    border-radius: 6px; 
+}
+.header-listed__items::before{
+    display: block;
+    content: '';
+    background-color: #F2F2F2   ;
+    width: 100%;
+    height: 10px;
+}
+
+.main-items:hover .header-listed__items{
+    display: block;
+}
+.header-listed__table {
+    margin-top:9px;
+    display: flex;
+    width: 70%;
+}
+.header-listed__table1 {
+    margin-left:22px;
+    display:flex;
+    float: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 33%;
+}
+
+.header--notify {
+    position: absolute;
+    margin-top:12px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 9px;
+    flex-wrap: wrap;
+    height: 150px;
+    color:black;
+}
+.header--notify li {
+    list-style: none;
+    color:#999999;
+    margin:5px 0 ; 
+    font-size: 13px;
+    margin-right:25px
+    
+}
+.img__demo {
+    width: 30%;
+}
+.img__demo1 img {
+    position: absolute;
+    top: 11%;
+    border-radius: 8px;
+    right: 21px;
+    width: 20%;
+}
+.img__demo2 img {
+    position: absolute;
+    top: 11%;
+    border-radius: 8px;
+    right: 21px;
+    width: 30%;
+}
+.img__demo3 img {
+    position: absolute;
+    top: 10%;
+    border-radius: 8px;
+    right: 21px;
+    width: 22%;
+}
+.img__demo4 img {
+    position: absolute;
+    top: 10%;
+    border-radius: 8px;
+    right: 21px;
+    width: 22%;
+}
+.header-listed__table1 h2 {
+    margin-top:9px;
+    margin-left:9px;
+    color:#000000;
+    font-size: 13px;
+}
+/*The end */
+.header-listed__section{
+color: rgb(243, 244, 245);
+margin: 0 55px;
+padding-top: 12px;
+display: flex;
+font-size:10px;
+justify-content:space-between;
+list-style-type: none;
+}
+.main-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 125px;
+    font-size: 13px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.header-listed__section li:hover {
+    color: #9feef4;
+}
+.content__img {
+    overflow: hidden;
+   
+}
+.image-container {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    animation: slide 10s linear infinite; 
+    
+}
+.image-container .image {
+     
+    width:48vw; 
+    border-radius: 8px;
+    margin-top:12px;
+    margin-left:11px;
+    height: 350px;
+    padding: 0 2px;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    0% {
+      transform: translateX(-49% ); /*Di chuyển ảnh về bên trái*/
+    
+    }
+}
+.contact__icon {
+    position: fixed;
+    z-index: 4;
+    top: 50%;
+    height: 150px;
+    width: 40px;
+    padding: 7px 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top:-30px;
+    align-items: center;
+    
+}
+.contact__icon a {
+    font-size: 30px;
+    line-height: 45px;
+
+}
+.contact__icon a:hover {
+    transform: scale(1.3);
+}
+
+/* Các mục button */
+.content__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    
+}
+.content__list--items button {
+ font-size: 20px;
+ padding:5px;
+ margin-right:20px;
+ border:1px solid #f97b7b;
+ border-radius: 5px ;
+ color:rgb(23, 23, 23);
+ background-color: #de6767;
+}
+.content__list--items button:hover {
+    background-color: #EE0033;
+}
+.content__list--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    
+}
+.content__list--img .list{
+   width: 45vh;
+   height:250px;
+   border: 1px solid #daafb7;
+   border-radius: 10px;
+   margin-right:10px;
+   margin-left: 10px;
+
+}
+/* San pham sale */
+p.tiller {
+    color: #FFFFFF;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #dc1010;
+    width: 150px;
+    height:30px;
+    font-weight: 800;
+    line-height: 2;
+    border-radius: 5px;
+    text-align: center;
+    margin:15px 0 15px 50px ;
+}
+p.tiller:hover {
+    background-color: #9feef4;
+}
+.content__product {
+    display: flex;
+    margin:25px 48px;
+    height: 500px;
+    transition: transfrom 1s ease;
+    
+}
+
+img.iphone {
+    max-width: 225px;
+    margin-top: 12px;
+    padding: 0 15px;
+    cursor:pointer;
+   
+}
+.content__product--list .iphone:hover {
+   transform: scale(1.1);
+   
+   
+   
+}
+.content__product--list{
+    position: relative;
+    background-color: #fff;
+    background:#FFF;
+    border-radius: 15px;
+    margin-right:12px;
+    text-align: center;
+    
+}
+
+img.sale {
+    position: absolute;
+    top:-32px;
+    right:-30px;
+    width: 50px;
+    
+}
+
+.content__product--list p {
+    margin-top:5px;
+    font-size: 14px;
+    color:#000000;
+    font-weight: 800;
+}
+del {
+    opacity: 0.5;
+}
+dt {
+   color:#EE0033;
+}
+.price-old, .price-new, .discount {
+    margin: 10px 0;
+}
+.price-old {
+    opacity: 0.4;
+    font-weight:700;
+}
+.price-new {
+    color:#EE0033;
+    font-weight: 600;
+}
+.discount {
+    color:#EE0033;
+    font-weight:600;
+}
+/* Mua Hàng */
+button.buy__iphone {
+    margin-top:-10px;
+    margin-right:5px;
+    border:1px solid #daafb7;
+    padding:4px;
+    border-radius:4px;
+    cursor:pointer;
+    color:rgb(43, 124, 200);
+    background-color:#FFFFFF;
+}
+p.logo {
+    font-size: 10px;
+    font-weight: 300;
+    margin:5px 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#555;
+
+}
+.detail {
+    display:flex;
+    margin:22px 2px;
+    justify-content: space-around;
+    align-items: center;
+}
+img.logo {
+    width: 50px;
+    display: flex;
+    margin-left: 15px;
+    margin-top:10px;
+    
+}
+.detail__buy{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    font-weight: 700;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #f32222;
+    color:#FFFFFF;
+    display: none;
+
+}
+
+.detail__information{
+    display: none;
+    width: 60px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color:#a4afb9;
+    color:#FFF;
+
+}
+.detail__buy:hover {
+    background-color:#e71818 ;
+}
+
+.detail__information:hover {
+    background-color: #6c757d;
+}
+.content__product--list:hover .detail__buy  {
+    display:block;
+}
+.content__product--list:hover .detail__information  {
+    display:block;
+}
